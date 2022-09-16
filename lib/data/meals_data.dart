@@ -1,4 +1,4 @@
-import '../domain/entities/meals.dart';
+import '../domain/entities/meals_entity.dart';
 import '../domain/enums/complexity.dart';
 import '../domain/enums/cost.dart';
 

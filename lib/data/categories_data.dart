@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refeicoes/domain/entities/category.dart';
+import 'package:refeicoes/domain/entities/category_entity.dart';
 
 const categories = [
   Category(

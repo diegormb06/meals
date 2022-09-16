@@ -23,7 +23,8 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.pink,
         canvasColor: const Color.fromRGBO(255, 254, 229, 1),
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          secondary: Colors.red, primary: Colors.pink, // Your accent color
+          secondary: const Color.fromARGB(255, 248, 190, 65),
+          primary: Colors.pink, // Your accent color
         ),
         textTheme: ThemeData.light().textTheme.copyWith(
               headline1: const TextStyle(
