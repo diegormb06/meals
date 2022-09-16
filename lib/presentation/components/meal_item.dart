@@ -35,8 +35,10 @@ class MealItem extends StatelessWidget {
                   ),
                 ),
                 Positioned(
+                  right: 10,
                   bottom: 20,
-                  child: Container( width: 300,
+                  child: Container(
+                    width: 300,
                     color: Colors.black54,
                     padding: const EdgeInsets.symmetric(
                       vertical: 5,
@@ -54,7 +56,36 @@ class MealItem extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Row(
+                    children: [
+                      const Icon(Icons.schedule),
+                      const SizedBox(width: 5),
+                      Text('${meal.duration} min'),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Icon(Icons.work),
+                      const SizedBox(width: 5),
+                      Text(meal.complexityText),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      const Icon(Icons.attach_money),
+                      const SizedBox(width: 5),
+                      Text(meal.costText),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

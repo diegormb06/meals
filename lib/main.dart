@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:refeicoes/presentation/screens/categories_meals_screen.dart';
 import 'package:refeicoes/presentation/screens/categories_screen.dart';
+import 'package:refeicoes/presentation/screens/meal_detail_screen.dart';
 import 'package:refeicoes/routes.dart';
 
 void main() {
@@ -34,29 +35,9 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         AppRoutes.home: (context) => const CategoriesScreen(),
-        AppRoutes.categoriesMeals: (context) => const CategoriesMealsScreen()
+        AppRoutes.categoriesMeals: (context) => const CategoriesMealsScreen(),
+        AppRoutes.mealDetail: (context) => const MealDetailScreen()
       },
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('DeliMeals'),
-      ),
-      body: const Center(
-        child: Text('Navegar é preciso!!'),
-      ),
     );
   }
 }
