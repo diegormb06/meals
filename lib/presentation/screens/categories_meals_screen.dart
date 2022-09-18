@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:refeicoes/data/meals_data.dart';
-import 'package:refeicoes/presentation/components/meal_item.dart';
+import 'package:refeicoes/presentation/components/layout/meal_item.dart';
 import '../../domain/entities/category_entity.dart';
 
 class CategoriesMealsScreen extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:refeicoes/routes.dart';
 
-import '../../domain/entities/meals_entity.dart';
+import '../../../domain/entities/meals_entity.dart';
 
 class MealItem extends StatelessWidget {
   const MealItem({super.key, required this.meal});
