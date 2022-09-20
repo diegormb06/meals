@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:refeicoes/presentation/components/data_display/Menu_item.dart';
+import 'package:refeicoes/routes.dart';
 
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
@@ -12,7 +13,7 @@ class MainDrawer extends StatelessWidget {
           Container(
             height: 120,
             width: double.infinity,
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             alignment: Alignment.bottomRight,
             color: Theme.of(context).colorScheme.secondary,
             child: Text(
@@ -24,8 +25,17 @@ class MainDrawer extends StatelessWidget {
               ),
             ),
           ),
-          const DrawerMenuItem(icon: Icons.restaurant, label: 'Refeições'),
-          const DrawerMenuItem(icon: Icons.settings, label: 'Configurações')
+          DrawerMenuItem(
+            Icons.restaurant,
+            'Refeições',
+            () => Navigator.of(context).pushReplacementNamed(AppRoutes.home),
+          ),
+          DrawerMenuItem(
+            Icons.settings,
+            'Configurações',
+            () =>
+                Navigator.of(context).pushReplacementNamed(AppRoutes.settings),
+          ),
         ],
       ),
     );

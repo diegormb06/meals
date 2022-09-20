@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class DrawerMenuItem extends StatelessWidget {
   final String label;
   final IconData icon;
+  final void Function() onTap;
 
-  const DrawerMenuItem({
-    super.key,
-    required this.icon,
-    required this.label,
-  });
+  const DrawerMenuItem(this.icon, this.label, this.onTap, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +21,7 @@ class DrawerMenuItem extends StatelessWidget {
             fontSize: 24,
             fontWeight: FontWeight.bold),
       ),
-      onTap: () {},
+      onTap: onTap,
     );
   }
 }

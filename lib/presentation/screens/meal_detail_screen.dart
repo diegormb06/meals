@@ -17,16 +17,17 @@ class MealDetailScreen extends StatelessWidget {
 
   Widget _listContainer(Widget child) {
     return Container(
-        width: 300,
-        height: 200,
-        padding: const EdgeInsets.all(5),
-        margin: const EdgeInsets.all(5),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          border: Border.all(color: Colors.grey),
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: child);
+      width: 300,
+      height: 200,
+      padding: const EdgeInsets.all(5),
+      margin: const EdgeInsets.all(5),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.grey),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: child,
+    );
   }
 
   @override
@@ -82,6 +83,10 @@ class MealDetailScreen extends StatelessWidget {
             ))
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.star),
+        onPressed: () => Navigator.of(context).pop(meal),
       ),
     );
   }
