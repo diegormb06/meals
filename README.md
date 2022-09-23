@@ -14,3 +14,15 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+### Tela inicial
+
+![Expenses Manager](./Screenshot_1.png)
+
+### Tela Lista de Refeições
+
+![Expenses Manager](./Screenshot_2.png)
+
+### Tela de Configuração dos filtros
+
+![Expenses Manager](./Screenshot_3.png)
