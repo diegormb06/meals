@@ -5,7 +5,7 @@ A Flutter project for study and experience.
 ## Getting Started
 
 This project is based on COD3R course.
-see [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+see [Cod3r on Udemy](https://www.udemy.com/course/curso-flutter))
 
 
 For help getting started with Flutter development, view the
